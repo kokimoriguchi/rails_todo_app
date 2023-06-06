@@ -88,6 +88,18 @@ td {
   background-color: #dc3545;
 }
 
+.back {
+  text-align: center;
+  display: inline-block;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  background-color: #007bff;
+  text-decoration: none;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+}
+
 .new-task {
   display: inline-block;
   margin-bottom: 20px;
