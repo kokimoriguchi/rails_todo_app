@@ -1,7 +1,7 @@
 <div class="container">
   <h1>Todo List</h1>
 
-  <a class="new-task" href="/todos/new">タスクを追加する</a>
+  <%= link_to "タスクを追加する", new_todo_path, class:"new-task"%>
 
   <table>
     <thead>
@@ -17,7 +17,7 @@
           <td><%= todo.title %></td>
           <td>
             <%= link_to "編集", edit_todo_path(todo), class: "edit" %>
-            <%= link_to "削除", todo_path(todo), data: { turbo_method: :delete }, class: "delete" %>
+            <%= link_to "削除", todo_path(todo), data: { turbo_method: :delete, turbo_confirm: '本当に削除していいですか？' }, class: "delete" %>
           </td>
         </tr>
       <% end %>
