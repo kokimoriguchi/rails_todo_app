@@ -23,6 +23,8 @@ body {
 .container {
   max-width: 600px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
 }
 
 h1 {
@@ -109,4 +111,10 @@ td {
   color: #fff;
   background-color: #007bff;
   text-decoration: none;
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
 }

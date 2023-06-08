@@ -12,7 +12,8 @@ class TodosController < ApplicationController
     if @todo.save
       redirect_to todos_path
     else
-      render "show"
+      Rails.logger.debug(@todo.errors.full_messages)
+      render :new, status: :unprocessable_entity
     end
   end
 

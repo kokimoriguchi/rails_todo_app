@@ -72,3 +72,4 @@ group :test do
 end
 
 gem 'rails-ujs'
+gem 'rails-i18n'
