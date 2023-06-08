@@ -1,0 +1,9 @@
+ja:
+  activerecord:
+    attributes:
+      todo:
+        title: タスクのタイトル
+  activemodel: # Formオブジェクトを用いた場合
+    attributes:
+      order_object:
+        title:
